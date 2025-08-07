@@ -1,0 +1,10 @@
+{
+    "name": "Antonio Prudente",
+    "social": ["https://github.com/Gabrielcarv97/", "https://www.linkedin.com/in/gabrielcarv-97/"],
+    "source-code-repo": "https://github.com/Gabrielcarv97/rinha-backend-2015-c",
+    "langs": ["csharp"],
+    "storages": ["postgresql", "redis"],
+    "messaging": ["redis"],
+    "load-balancers": ["nginx"],
+    "other-technologies": ["aspnet-core", "dapper", "minimal-apis"]
+}

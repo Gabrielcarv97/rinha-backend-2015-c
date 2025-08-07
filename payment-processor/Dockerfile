@@ -4,10 +4,9 @@ EXPOSE 8080
 
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
-COPY ["payment-processor/payment-processor.csproj", "payment-processor/"]
-RUN dotnet restore "payment-processor/payment-processor.csproj"
+COPY ["payment-processor.csproj", "."]
+RUN dotnet restore "payment-processor.csproj"
 COPY . .
-WORKDIR "/src/payment-processor"
 RUN dotnet build "payment-processor.csproj" -c Release -o /app/build
 
 FROM build AS publish
